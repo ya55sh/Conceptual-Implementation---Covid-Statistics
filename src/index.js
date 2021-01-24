@@ -100,7 +100,7 @@ app.get("/healthyStates", async (req, res) => {
       },
       {
         $match: {
-          mortality: { $gt: 0.005 },
+          mortality: { $lt: 0.005 },
         },
       },
     ]);
